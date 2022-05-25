@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
-}  
+}
 .wrapper {
   display: flex;
   background-color: #3C3A39;
-  display: flex;
   justify-content: space-between;
   height: 48px;
   align-items: center;
@@ -22,24 +22,27 @@ html, body {
   height: 24px;
   width: 24px;
 }
+
 .wrapper h1 {
   font-size: 18px;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-left: 24px;
   padding-top: 12px;
   padding-bottom: 12px;
   line-height: 24px;
 }
+
 body {
   display: flex;
   flex-direction: column;
   font-family: "Roboto";
 }
+
 .headline {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #1C1A19;
+  background-color: #1c1a19;
   gap: 12px;
   padding: 120px 24px;
   justify-content: flex-start;
@@ -47,10 +50,11 @@ body {
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 100%;
-  height: 350px;  
+  height: 350px;
 }
+
 .headline h1 {
-  color: #FF6B00;
+  color: #ff6b00;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
@@ -60,22 +64,25 @@ body {
   margin-bottom: -25px;
   margin-top: -25px;
 }
+
 .headline h2 {
   font-family: "Roboto";
-  color: #FFF5E1;
+  color: #fff5e1;
   margin-bottom: -15px;
-  
 }
+
 .headline h3 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400px;
   font-size: 16px;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #ffffff;
   max-width: 327px;
 }
+
 .social a {
-  color: #DBD8D7;
+  color: #dbd8d7;
   letter-spacing: 15px;
+  font-size: 24px;
 }
