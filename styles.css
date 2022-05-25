@@ -39,7 +39,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
 }
 
 .headline {
@@ -62,7 +62,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
-  font-family: "Crete Round";
+  font-family: 'Crete Round', serif;
   line-height: 64px;
   letter-spacing: 0.37px;
   margin-bottom: -25px;
@@ -70,13 +70,13 @@ body {
 }
 
 .headline h2 {
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   color: #fff5e1;
   margin-bottom: -15px;
 }
 
 .headline h3 {
-  font-family: "Poppins";
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400px;
   font-size: 16px;
