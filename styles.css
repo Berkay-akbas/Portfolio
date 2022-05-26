@@ -1,14 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@500&family=Roboto:wght@300&display=swap");
 
 html,
 body {
   margin: 0;
   padding: 0;
-}
-
-.logo {
-  text-decoration: none;
 }
 
 .wrapper {
@@ -31,7 +27,7 @@ body {
   width: 24px;
 }
 
-.wrapper h1 {
+.wrapper p {
   font-size: 18px;
   color: #fff;
   padding-left: 24px;
@@ -40,10 +36,14 @@ body {
   line-height: 24px;
 }
 
+.wrapper a {
+  text-decoration: none;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .headline {
@@ -66,7 +66,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
-  font-family: 'Crete Round', serif;
+  font-family: "Crete Round", serif;
   line-height: 64px;
   letter-spacing: 0.37px;
   margin-bottom: -25px;
@@ -74,13 +74,13 @@ body {
 }
 
 .headline h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff5e1;
   margin-bottom: -15px;
 }
 
 .headline p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: 400px;
   font-size: 16px;
