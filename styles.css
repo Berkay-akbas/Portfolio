@@ -293,8 +293,9 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 24px;
   padding-top: 120px;
+  width: 375px;
+  margin-left: -24px;
 }
 
 .about_icon1 {
@@ -307,11 +308,13 @@ body {
   color: #fff;
   list-style-type: none;
   font-weight: 700;
+  margin-left: -24px;
 }
 
 .set ul {
   line-height: 40px;
-  margin-top: -20px;
+  margin-top: -10px;
+  padding: 0;
 }
 
 .set li {
@@ -323,7 +326,7 @@ body {
 }
 
 .set img {
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 .bottom {
