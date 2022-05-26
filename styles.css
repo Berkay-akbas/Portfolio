@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+.logo {
+  text-decoration: none;
+}
+
 .wrapper {
   display: flex;
   background-color: #3c3a39;
