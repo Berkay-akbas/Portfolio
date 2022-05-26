@@ -15,7 +15,7 @@ body {
   align-items: center;
 }
 
-.wrapper a {
+.wrapper .hamburger {
   height: 40px;
   width: 40px;
   margin-right: 24px;
@@ -75,7 +75,7 @@ body {
   margin-bottom: -15px;
 }
 
-.headline h3 {
+.headline p {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400px;
@@ -89,4 +89,12 @@ body {
   color: #dbd8d7;
   letter-spacing: 15px;
   font-size: 24px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding-left: 5px;
+  margin-top: -5px;
 }
