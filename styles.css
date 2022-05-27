@@ -15,6 +15,7 @@ body {
   justify-content: space-between;
   height: 48px;
   align-items: center;
+  width: 375px;
 }
 
 .wrapper .hamburger {
@@ -54,13 +55,14 @@ body {
   align-items: flex-start;
   background-color: #1c1a19;
   gap: 12px;
-  padding: 120px 24px;
+  padding-top: 140px;
   justify-content: flex-start;
   background-image: url("./icons/Group.png");
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 100%;
-  height: 350px;
+  height: 492px;
+  width: 375px;
 }
 
 .headline h1 {
@@ -73,12 +75,14 @@ body {
   letter-spacing: 0.37px;
   margin-bottom: -25px;
   margin-top: -25px;
+  padding-left: 24px;
 }
 
 .headline h2 {
   font-family: "Roboto", sans-serif;
   color: #fff5e1;
   margin-bottom: -15px;
+  padding-left: 24px;
 }
 
 .headline p {
@@ -89,12 +93,14 @@ body {
   line-height: 24px;
   color: #fff;
   max-width: 327px;
+  padding-left: 24px;
 }
 
 .social a {
   color: #dbd8d7;
-  letter-spacing: 15px;
+  letter-spacing: 2px;
   font-size: 24px;
+  padding-left: 24px;
 }
 
 .social ul {
@@ -107,20 +113,25 @@ body {
 
 .works {
   background-color: #fff;
+  width: 375px;
 }
 
-.works header {
+.works header h3 {
   font-family: "Crete Round", serif;
-  font-weight: 400;
+  font-weight: 00;
   font-size: 40px;
+  vertical-align: center;
   line-height: 52px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #212121;
   margin-left: 25px;
-  margin-right: 25px;
+  text-align: center;
   margin-top: 120px;
+  white-space: nowrap;
+  width: 327px;
+  padding-bottom: 40px;
 }
 
 .multi-stories {
@@ -129,7 +140,7 @@ body {
   align-items: baseline;
   padding-right: 24px;
   padding-left: 24px;
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 .multi-stories h2 {
@@ -248,8 +259,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 24px;
   height: 652px;
+  width: 375px;
   background-image: url(images/about.png);
   background-repeat: no-repeat;
   background-position-x: 100%;
@@ -258,12 +269,14 @@ body {
 
 .about h2 {
   font-family: "Crete Round", serif;
-  font-size: 60px;
+  font-size: 72px;
   line-height: 88px;
   color: #ff6b00;
-  margin-bottom: -10px;
-  padding-top: 40px;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 90px;
+  white-space: nowrap;
 }
 
 .about p {
@@ -271,7 +284,9 @@ body {
   font-family: "inter", sans-serif;
   color: #f4f5f7;
   line-height: 24px;
-  margin-bottom: 25px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-top: -20px;
 }
 
 .about a {
@@ -285,6 +300,7 @@ body {
   line-height: 24px;
   letter-spacing: 3%;
   width: 140px;
+  margin-left: 24px;
 }
 
 .set {
@@ -294,7 +310,7 @@ body {
   align-items: center;
   text-align: center;
   padding-top: 120px;
-  width: 375px;
+
   margin-left: -24px;
 }
 
@@ -309,6 +325,7 @@ body {
   list-style-type: none;
   font-weight: 700;
   margin-left: -24px;
+  margin-top: 50px;
 }
 
 .set ul {
@@ -323,6 +340,7 @@ body {
   list-style-type: none;
   line-height: 42.67px;
   font-weight: 100;
+  margin-top: 10px;
 }
 
 .set img {
@@ -330,7 +348,11 @@ body {
 }
 
 .bottom {
-  height: 20px;
+  box-sizing: border-box;
+  height: 110px;
   border-bottom: 1px solid #fff;
-  padding-top: 278px;
+  width: 327px;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-top: 169px;
 }
