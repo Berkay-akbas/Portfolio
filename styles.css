@@ -431,9 +431,11 @@ textarea::placeholder {
   .wrapper .navbar {
     display: none;
   }
+
   .works h3 {
     border-bottom: 1px solid #212121;
   }
+
   .works header h3 {
     font-family: "Crete Round", serif;
     font-weight: 00;
@@ -459,6 +461,7 @@ textarea::placeholder {
     padding-top: 192px;
     padding-bottom: 250px;
   }
+
   .headline h1,
   .headline h2,
   .headline p {
@@ -547,11 +550,13 @@ textarea::placeholder {
     margin-top: 0;
     padding-top: 0%;
   }
+
   .multiwrapper h2 {
     font-size: 40px;
     line-height: 52px;
     font-style: normal;
   }
+
   .multiwrapper p {
     font-size: 20px;
     line-height: 28px;
@@ -562,13 +567,14 @@ textarea::placeholder {
     grid-gap: 24px;
     padding-left: 10%;
     padding-right: 10%;
-    row-gap: ;
   }
+
   .card:hover {
     background-image: url(images/hover.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .card:hover > .hide {
     display: none;
   }
@@ -581,14 +587,17 @@ textarea::placeholder {
     background-position-y: 20%;
     background-size: calc(25% + 100px);
   }
+
   .about h2 {
     margin-bottom: 48px;
     padding-left: 0;
   }
+
   .about a {
     margin-bottom: -230px;
     margin-left: 0;
   }
+
   .about p {
     width: 40%;
     font-size: 20px;
@@ -597,11 +606,13 @@ textarea::placeholder {
     max-height: 5000px;
     padding-left: 0;
   }
+
   .about .bottom {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
     display: none;
   }
+
   .set {
     display: flex;
     flex-direction: row;
@@ -614,6 +625,7 @@ textarea::placeholder {
     border-top: #f4f5f7 solid 1px;
     padding-top: 150px;
   }
+
   .set p {
     padding: 0;
     margin: 0;
@@ -623,6 +635,7 @@ textarea::placeholder {
     font-size: 32px;
     min-width: 200px;
   }
+
   .set li {
     text-align: left;
   }
@@ -633,10 +646,12 @@ textarea::placeholder {
     max-height: 18px;
     margin-right: 10px;
   }
+
   .form {
     flex-direction: row;
     padding: 135px;
   }
+
   .form p {
     max-width: 30%;
     text-align: left;
@@ -645,25 +660,31 @@ textarea::placeholder {
     line-height: 52px;
     font-weight: bold;
   }
+
   .form form {
     flex-direction: row;
     width: 50%;
     text-align: left;
   }
+
   .form button {
     margin-left: 24px;
   }
+
   .form input,
   textarea {
     width: 150%;
   }
+
   .wrapper {
     padding-left: 10%;
     padding-right: 10%;
   }
+
   .wrapper .hamburger {
     display: none;
   }
+
   .navbar {
     display: flex;
     flex-direction: row;
@@ -671,6 +692,7 @@ textarea::placeholder {
     list-style: none;
     gap: 33px;
   }
+
   .navbar i {
     width: 22px;
     height: 18px;
