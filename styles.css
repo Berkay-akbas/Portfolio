@@ -608,8 +608,6 @@ textarea::placeholder {
   }
 
   .about .bottom {
-    margin-left: 0px;
-    margin-right: 0px;
     display: none;
   }
 
@@ -639,6 +637,7 @@ textarea::placeholder {
   .set li {
     text-align: left;
   }
+
   .set img {
     padding: 0;
     margin: 0;
