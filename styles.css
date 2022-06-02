@@ -74,6 +74,17 @@ body {
   margin-bottom: -25px;
   margin-top: -25px;
   padding-left: 24px;
+  animation: appear 7s;
+}
+
+@keyframes appear {
+  from {
+    color: #1c1a19;
+  }
+
+  to {
+    color: #ff6b00;
+  }
 }
 
 .headline h2 {
@@ -426,6 +437,15 @@ textarea::placeholder {
   padding: 16px;
 }
 
+.social a {
+  display: inline-block;
+  transition: transform 2s;
+}
+
+.social a:hover {
+  transform: rotate(360deg);
+}
+
 @media only screen and (max-width: 768px) {
   .wrapper .navbar {
     display: none;
@@ -562,7 +582,7 @@ textarea::placeholder {
   }
 
   .gridContainer {
-    grid-template-columns: repeat(3, minmax(30%, 1fr));
+    grid-template-columns: repeat(3, minmax(26.77%, 1fr));
     grid-gap: 24px;
     padding-left: 10%;
     padding-right: 10%;
