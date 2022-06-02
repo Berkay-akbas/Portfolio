@@ -219,7 +219,7 @@ body {
   font-family: Inter, sans-serif;
   line-height: 20px;
   color: #0fff;
-  background-color: rgba(107, 107, 107, 0.5);
+  background-color: #696969;
 }
 
 .card a {
@@ -562,10 +562,14 @@ textarea::placeholder {
   }
 
   .gridContainer {
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(30%, 1fr));
     grid-gap: 24px;
     padding-left: 10%;
     padding-right: 10%;
+  }
+
+  .card a {
+    display: none;
   }
 
   .card:hover {
@@ -574,8 +578,21 @@ textarea::placeholder {
     background-size: cover;
   }
 
+  .card a:hover {
+    border: 1px solid rgba(#000, 0.05);
+    box-shadow: 5px 1px 2px rgba(#fff, 0.2);
+    color: lighten($red, 18%);
+    letter-spacing: 3px;
+    font-size: 20px;
+    transition: all 0.3s;
+  }
+
   .card:hover > .hide {
     display: none;
+  }
+
+  .card:hover > a {
+    display: block;
   }
 
   .about {
