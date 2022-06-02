@@ -568,6 +568,11 @@ textarea::placeholder {
     padding-right: 10%;
   }
 
+  .about a {
+    margin-bottom: -230px;
+    margin-left: 0;
+  }
+
   .card a {
     display: none;
   }
@@ -607,11 +612,6 @@ textarea::placeholder {
   .about h2 {
     margin-bottom: 48px;
     padding-left: 0;
-  }
-
-  .about a {
-    margin-bottom: -230px;
-    margin-left: 0;
   }
 
   .about p {
