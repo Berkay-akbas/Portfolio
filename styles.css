@@ -110,6 +110,8 @@ body {
   letter-spacing: 2px;
   font-size: 24px;
   padding-left: 24px;
+  display: inline-block;
+  transition: transform 2s;
 }
 
 .social ul {
@@ -435,11 +437,6 @@ textarea::placeholder {
 .bottomfooter {
   border-top: 1px solid #dfe1e6;
   padding: 16px;
-}
-
-.social a {
-  display: inline-block;
-  transition: transform 2s;
 }
 
 .social a:hover {
