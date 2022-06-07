@@ -625,9 +625,11 @@ textarea::placeholder {
   .card:hover > .hide {
     display: none;
   }
+
   .card:focus-within > .hide {
     display: none;
   }
+
   .card:focus-within > a {
     display: block;
   }
