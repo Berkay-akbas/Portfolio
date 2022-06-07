@@ -321,6 +321,15 @@ body {
   margin-top: 50px;
 }
 
+.set h3 {
+  font-size: 36px;
+  color: #fff;
+  list-style-type: none;
+  font-weight: 700;
+  margin-left: -24px;
+  margin-top: 50px;
+}
+
 .set ul {
   line-height: 40px;
   margin-top: -10px;
