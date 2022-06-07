@@ -141,7 +141,7 @@ body {
   padding-top: 40px;
 }
 
-.multi-stories h2 {
+.multi-stories h3 {
   font-family: "Crete Round", serif;
   font-style: regular;
   font-size: 28px;
@@ -201,7 +201,7 @@ body {
   padding: 16px;
 }
 
-.card h2 {
+.card h4 {
   font-family: "Crete Round", serif;
   font-size: 32px;
   line-height: 44px;
@@ -321,9 +321,17 @@ body {
   margin-top: 50px;
 }
 
+.set h3 {
+  font-size: 36px;
+  color: #fff;
+  list-style-type: none;
+  font-weight: 700;
+  margin-left: -24px;
+  margin-top: 50px;
+}
+
 .set ul {
   line-height: 40px;
-  margin-top: -10px;
   padding: 0;
 }
 
@@ -443,16 +451,21 @@ textarea::placeholder {
   transform: rotate(360deg);
 }
 
+.set div h3 {
+  display: inline;
+  padding-left: 25px;
+}
+
 @media only screen and (max-width: 768px) {
   .wrapper .navbar {
     display: none;
   }
 
-  .works h3 {
+  .works h2 {
     border-bottom: 1px solid #212121;
   }
 
-  .works header h3 {
+  .works header h2 {
     font-family: "Crete Round", serif;
     font-weight: 00;
     font-size: 40px;
@@ -611,6 +624,14 @@ textarea::placeholder {
 
   .card:hover > .hide {
     display: none;
+  }
+
+  .card:focus-within > .hide {
+    display: none;
+  }
+
+  .card:focus-within > a {
+    display: block;
   }
 
   .card:hover > a {
