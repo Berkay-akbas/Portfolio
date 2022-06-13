@@ -226,9 +226,8 @@ body {
   font-size: 15px;
   font-family: Inter, sans-serif;
   line-height: 20px;
-  color: #0fff;
-  background-color: #696969;
   color: #fff;
+  background-color: #696969;
 }
 
 .card a {
@@ -453,6 +452,19 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #3c3a39;
+    box-sizing: border-box;
+    height: 50rem;
+    padding-right: 10%;
+    transition: transform 30s ease-in;
+  }
+
   .header .navbar {
     display: none;
   }
@@ -465,22 +477,8 @@ textarea::placeholder {
     transform: rotate(180deg);
   }
 
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    width: 100vw;
-    background-color: #3c3a39;
-    box-sizing: border-box;
-    height: 50rem;
-    padding-right: 10%;
-    transform: translateY(0%);
-    transition: transform 3s ease-in;
-  }
-
-  .navbar .active {
-    transform: translateX(50%);
+  .navbar.active {
+    transform: translateY(10);
   }
 
   .navbar a {
@@ -490,12 +488,14 @@ textarea::placeholder {
     text-align: left;
     letter-spacing: 2px;
   }
+
   .navbar li {
     border-bottom: 1px solid #6f6c6b;
     padding-left: 1rem;
     margin: 10px 0;
     list-style: none;
   }
+
   .navbar li:nth-child(4) {
     visibility: hidden;
   }
@@ -536,6 +536,14 @@ textarea::placeholder {
     order: 1;
     margin-left: 10%;
     max-width: 556px;
+  }
+
+  .header ul {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    list-style: none;
+    gap: 33px;
   }
 
   .headline footer ul {
@@ -644,6 +652,10 @@ textarea::placeholder {
 
   .card a {
     display: none;
+  }
+
+  .navbar a {
+    color: #fff;
   }
 
   .card:hover {
@@ -773,18 +785,6 @@ textarea::placeholder {
 
   #menu {
     display: none;
-  }
-
-  .header ul {
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-    list-style: none;
-    gap: 33px;
-  }
-
-  .navbar a {
-    color: #fff;
   }
 
   .navbar i {

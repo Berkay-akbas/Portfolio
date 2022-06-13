@@ -16,8 +16,3 @@ navbar.addEventListener('click', () => {
   navbar.classList.remove('active');
   menu.classList.remove('fa-times');
 });
-// window.onscroll = () => {
-//   menu.classList.remove('fa-times');
-//   logo.classList.remove('off');
-//   navbar.classList.remove('active');
-// };
