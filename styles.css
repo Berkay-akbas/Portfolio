@@ -92,7 +92,6 @@ body {
 .headline p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 400px;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
@@ -138,7 +137,6 @@ body {
 
 .multi-stories h3 {
   font-family: "Crete Round", serif;
-  font-style: regular;
   font-size: 28px;
 }
 
@@ -208,7 +206,6 @@ body {
   font-family: Inter, sans-serif;
   font-size: 16px;
   color: #fff;
-  font-style: regular;
   line-height: 24px;
 }
 
@@ -234,7 +231,6 @@ body {
   background-color: #ff6b00;
   padding: 10px;
   font-family: Inter, sans-serif;
-  font-style: bold;
   font-weight: bold;
   text-decoration: none;
   color: #fff;
@@ -364,7 +360,6 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  font-style: bold;
 }
 
 .form ul {
@@ -477,10 +472,6 @@ textarea::placeholder {
     transform: rotate(180deg);
   }
 
-  .navbar.active {
-    transform: translateY(10);
-  }
-
   .navbar a {
     color: #fff5e1;
     font-size: 32px;
@@ -506,7 +497,6 @@ textarea::placeholder {
 
   .works header h2 {
     font-family: "Crete Round", serif;
-    font-weight: 00;
     font-size: 40px;
     line-height: 52px;
     display: flex;
@@ -570,7 +560,6 @@ textarea::placeholder {
 
   .works header h3 {
     font-family: "Crete Round", serif;
-    font-weight: 00;
     font-size: 30px;
     line-height: 52px;
     margin-left: 10%;
@@ -586,7 +575,6 @@ textarea::placeholder {
     z-index: 30;
     background: #fff;
     font-family: "Crete Round", serif;
-    font-weight: 00;
     font-size: 40px;
     line-height: 52px;
     margin-left: 10%;
@@ -664,8 +652,6 @@ textarea::placeholder {
   }
 
   .card a:hover {
-    border: 1px solid rgba(#000, 0.05);
-    box-shadow: 5px 1px 2px rgba(#fff, 0.2);
     color: lighten($red, 18%);
     letter-spacing: 3px;
     font-size: 20px;
