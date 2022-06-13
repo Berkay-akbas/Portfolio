@@ -9,37 +9,32 @@ body {
   padding: 0;
 }
 
-.wrapper {
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
-  background-color: #3c3a39;
-  justify-content: space-between;
-  height: 48px;
+  padding: 3% 10% 3% 10%;
   align-items: center;
+  justify-content: space-between;
+  background: #3c3a39;
 }
 
-.wrapper .hamburger {
-  height: 40px;
-  width: 40px;
-  margin-right: 24px;
-  margin-top: 18px;
-}
-
-.wrapper img {
-  height: 24px;
-  width: 24px;
-}
-
-.wrapper p {
-  font-size: 18px;
+.header a {
   color: #fff;
-  padding-left: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  line-height: 24px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-.wrapper a {
-  text-decoration: none;
+.header i {
+  color: #fff;
+}
+
+#menu {
+  color: #fff;
+  cursor: pointer;
 }
 
 body {
@@ -233,6 +228,7 @@ body {
   line-height: 20px;
   color: #0fff;
   background-color: #696969;
+  color: #fff;
 }
 
 .card a {
@@ -457,8 +453,51 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 768px) {
-  .wrapper .navbar {
+  .header .navbar {
     display: none;
+  }
+
+  .off {
+    visibility: hidden;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #3c3a39;
+    box-sizing: border-box;
+    height: 50rem;
+    padding-right: 10%;
+    transform: translateY(0%);
+    transition: transform 3s ease-in;
+  }
+
+  .navbar .active {
+    transform: translateX(50%);
+  }
+
+  .navbar a {
+    color: #fff5e1;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: left;
+    letter-spacing: 2px;
+  }
+  .navbar li {
+    border-bottom: 1px solid #6f6c6b;
+    padding-left: 1rem;
+    margin: 10px 0;
+    list-style: none;
+  }
+  .navbar li:nth-child(4) {
+    visibility: hidden;
   }
 
   .works h2 {
@@ -728,16 +767,15 @@ textarea::placeholder {
     width: 150%;
   }
 
-  .wrapper {
-    padding-left: 10%;
-    padding-right: 10%;
+  .header {
+    padding: 1% 10% 1% 10%;
   }
 
-  .wrapper .hamburger {
+  #menu {
     display: none;
   }
 
-  .navbar {
+  .header ul {
     display: flex;
     flex-direction: row;
     color: #fff;
@@ -745,8 +783,16 @@ textarea::placeholder {
     gap: 33px;
   }
 
+  .navbar a {
+    color: #fff;
+  }
+
   .navbar i {
     width: 22px;
     height: 18px;
   }
+}
+
+.active {
+  display: block !important;
 }
