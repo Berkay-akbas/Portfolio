@@ -508,7 +508,6 @@ textarea::placeholder {
     font-family: "Crete Round", serif;
     font-weight: 00;
     font-size: 40px;
-    vertical-align: center;
     line-height: 52px;
     display: flex;
     align-items: center;
