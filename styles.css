@@ -7,39 +7,35 @@ html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
-.wrapper {
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   display: flex;
-  background-color: #3c3a39;
-  justify-content: space-between;
-  height: 48px;
+  padding: 3% 10% 3% 10%;
   align-items: center;
+  justify-content: space-between;
+  background: #3c3a39;
 }
 
-.wrapper .hamburger {
-  height: 40px;
-  width: 40px;
-  margin-right: 24px;
-  margin-top: 18px;
-}
-
-.wrapper img {
-  height: 24px;
-  width: 24px;
-}
-
-.wrapper p {
-  font-size: 18px;
+.header a {
   color: #fff;
-  padding-left: 24px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  line-height: 24px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-.wrapper a {
-  text-decoration: none;
+.header i {
+  color: #fff;
+}
+
+#menu {
+  color: #fff;
+  cursor: pointer;
 }
 
 body {
@@ -97,7 +93,6 @@ body {
 .headline p {
   font-family: "Poppins", sans-serif;
   font-style: normal;
-  font-weight: 400px;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
@@ -143,7 +138,6 @@ body {
 
 .multi-stories h3 {
   font-family: "Crete Round", serif;
-  font-style: regular;
   font-size: 28px;
 }
 
@@ -213,7 +207,6 @@ body {
   font-family: Inter, sans-serif;
   font-size: 16px;
   color: #fff;
-  font-style: regular;
   line-height: 24px;
 }
 
@@ -231,7 +224,7 @@ body {
   font-size: 15px;
   font-family: Inter, sans-serif;
   line-height: 20px;
-  color: #0fff;
+  color: #fff;
   background-color: #696969;
 }
 
@@ -239,7 +232,6 @@ body {
   background-color: #ff6b00;
   padding: 10px;
   font-family: Inter, sans-serif;
-  font-style: bold;
   font-weight: bold;
   text-decoration: none;
   color: #fff;
@@ -369,7 +361,6 @@ body {
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
-  font-style: bold;
 }
 
 .form ul {
@@ -457,8 +448,48 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 768px) {
-  .wrapper .navbar {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #3c3a39;
+    box-sizing: border-box;
+    height: 50rem;
+    padding-right: 10%;
+    transition: transform 30s ease-in;
+  }
+
+  .header .navbar {
     display: none;
+  }
+
+  .off {
+    visibility: hidden;
+  }
+
+  .fa-times {
+    transform: rotate(180deg);
+  }
+
+  .navbar a {
+    color: #fff5e1;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: left;
+    letter-spacing: 2px;
+  }
+
+  .navbar li {
+    border-bottom: 1px solid #6f6c6b;
+    padding-left: 1rem;
+    margin: 10px 0;
+    list-style: none;
+  }
+
+  .navbar li:nth-child(4) {
+    visibility: hidden;
   }
 
   .works h2 {
@@ -467,9 +498,7 @@ textarea::placeholder {
 
   .works header h2 {
     font-family: "Crete Round", serif;
-    font-weight: 00;
     font-size: 40px;
-    vertical-align: center;
     line-height: 52px;
     display: flex;
     align-items: center;
@@ -499,6 +528,14 @@ textarea::placeholder {
     max-width: 556px;
   }
 
+  .header ul {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    list-style: none;
+    gap: 33px;
+  }
+
   .headline footer ul {
     display: flex;
     flex-direction: column;
@@ -524,7 +561,6 @@ textarea::placeholder {
 
   .works header h3 {
     font-family: "Crete Round", serif;
-    font-weight: 00;
     font-size: 30px;
     line-height: 52px;
     margin-left: 10%;
@@ -540,7 +576,6 @@ textarea::placeholder {
     z-index: 30;
     background: #fff;
     font-family: "Crete Round", serif;
-    font-weight: 00;
     font-size: 40px;
     line-height: 52px;
     margin-left: 10%;
@@ -607,6 +642,10 @@ textarea::placeholder {
     display: none;
   }
 
+  .navbar a {
+    color: #fff;
+  }
+
   .card:hover {
     background-image: url(images/hover.png);
     background-repeat: no-repeat;
@@ -614,8 +653,6 @@ textarea::placeholder {
   }
 
   .card a:hover {
-    border: 1px solid rgba(#000, 0.05);
-    box-shadow: 5px 1px 2px rgba(#fff, 0.2);
     color: lighten($red, 18%);
     letter-spacing: 3px;
     font-size: 20px;
@@ -728,25 +765,20 @@ textarea::placeholder {
     width: 150%;
   }
 
-  .wrapper {
-    padding-left: 10%;
-    padding-right: 10%;
+  .header {
+    padding: 1% 10% 1% 10%;
   }
 
-  .wrapper .hamburger {
+  #menu {
     display: none;
-  }
-
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    color: #fff;
-    list-style: none;
-    gap: 33px;
   }
 
   .navbar i {
     width: 22px;
     height: 18px;
   }
+}
+
+.active {
+  display: block !important;
 }
