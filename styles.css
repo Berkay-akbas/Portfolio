@@ -189,6 +189,8 @@ body {
 
 .card {
   background-image: url(images/card.png);
+  background-repeat: round;
+  background-size: auto;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -225,7 +227,7 @@ body {
   font-family: Inter, sans-serif;
   line-height: 20px;
   color: #fff;
-  background-color: #696969;
+  background-color: rgba(105, 105, 105, 0.5);
 }
 
 .card a {
