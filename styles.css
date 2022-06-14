@@ -1,12 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@500&family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@700&display=swap');
 
 html,
 body {
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .header {
@@ -40,7 +41,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .headline {
@@ -52,7 +53,7 @@ body {
   padding-top: 140px;
   padding-bottom: 140px;
   justify-content: flex-start;
-  background-image: url("./icons/Group.png");
+  background-image: url('./icons/Group.png');
   background-repeat: no-repeat;
   background-position-x: 100%;
   background-position-y: 100%;
@@ -63,7 +64,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   line-height: 64px;
   letter-spacing: 0.37px;
   margin-bottom: -25px;
@@ -83,14 +84,14 @@ body {
 }
 
 .headline h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #fff5e1;
   margin-bottom: -15px;
   padding-left: 24px;
 }
 
 .headline p {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
@@ -136,7 +137,7 @@ body {
 }
 
 .multi-stories h3 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-size: 28px;
 }
 
@@ -195,7 +196,7 @@ body {
 }
 
 .card h4 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
@@ -255,7 +256,7 @@ body {
 }
 
 .about h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-size: 72px;
   line-height: 88px;
   color: #ff6b00;
@@ -267,7 +268,7 @@ body {
 
 .about p {
   font-size: 16px;
-  font-family: "inter", sans-serif;
+  font-family: 'inter', sans-serif;
   color: #f4f5f7;
   line-height: 24px;
   padding-left: 24px;
@@ -496,7 +497,7 @@ textarea::placeholder {
   }
 
   .works header h2 {
-    font-family: "Crete Round", serif;
+    font-family: 'Crete Round', serif;
     font-size: 40px;
     line-height: 52px;
     display: flex;
@@ -559,7 +560,7 @@ textarea::placeholder {
   }
 
   .works header h3 {
-    font-family: "Crete Round", serif;
+    font-family: 'Crete Round', serif;
     font-size: 30px;
     line-height: 52px;
     margin-left: 10%;
@@ -574,7 +575,7 @@ textarea::placeholder {
     position: relative;
     z-index: 30;
     background: #fff;
-    font-family: "Crete Round", serif;
+    font-family: 'Crete Round', serif;
     font-size: 40px;
     line-height: 52px;
     margin-left: 10%;
@@ -768,9 +769,9 @@ textarea::placeholder {
     padding: 1% 10% 1% 10%;
   }
 
-  #menu {
+  /* #menu {
     display: none;
-  }
+  } */
 
   .navbar i {
     width: 22px;
