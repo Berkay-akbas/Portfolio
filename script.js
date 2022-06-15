@@ -8,8 +8,8 @@ menu.addEventListener('click', () => {
   menu.classList.toggle('fa-times');
 });
 
-// navbar.addEventListener('click', () => {
-//   logo.classList.remove('off');
-//   navbar.classList.remove('active');
-//   menu.classList.remove('fa-times');
-// });
+navbar.addEventListener('click', () => {
+  logo.classList.remove('off');
+  navbar.classList.remove('active');
+  menu.classList.remove('fa-times');
+});
