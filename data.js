@@ -159,6 +159,7 @@ function pop(event) {
     <ul class="pop-ul">
       ${liTag}
     </ul>
+  <div class="popupwrapper">
   <div class="project-image">
        
     <img src="${currentWork.popupimg}" alt=" " />
@@ -177,6 +178,7 @@ function pop(event) {
       <button type="button" class="see-source">
         See Source
         <i class="fab fa-github"></i>
+    </div>
     </div>
   </div>  
   </div>

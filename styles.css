@@ -40,8 +40,6 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   font-family: "Roboto", sans-serif;
 }
 
@@ -472,7 +470,7 @@ textarea::placeholder {
     position: fixed;
     z-index: 9;
     left: 3%;
-    top: 2%;
+    top: 1%;
     right: 3%;
     box-sizing: border-box;
     height: auto;
@@ -495,7 +493,7 @@ textarea::placeholder {
     font-family: "Roboto", sans-serif;
     font-size: 32px;
     color: #172b4d;
-    margin-top: 0;
+    margin-top: -10px;
   }
 
   .pop-ul {
@@ -507,6 +505,7 @@ textarea::placeholder {
     line-height: 16px;
     color: #3c3a39;
     padding: 0;
+    margin-top: -10px;
   }
 
   .pop-ul li {
@@ -518,6 +517,7 @@ textarea::placeholder {
   .popup-buttons {
     display: flex;
     justify-content: space-between;
+    margin-top: -10px;
   }
 
   .pop-desc .text {
@@ -525,6 +525,8 @@ textarea::placeholder {
     color: #344563;
     text-align: left;
     font-family: "Inter", sans-serif;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .see-live {
@@ -543,7 +545,11 @@ textarea::placeholder {
     padding: 15px;
     font-size: 17px;
     letter-spacing: 1.5px;
-    margin-right: 1rem;
+  }
+
+  .project-image {
+    height: 50%;
+    width: auto;
   }
 
   .project-image img {
@@ -873,7 +879,6 @@ textarea::placeholder {
     left: 8%;
     top: 8%;
     right: 8%;
-    box-sizing: border-box;
     height: auto;
     background-color: #fff;
     padding: 2rem;
@@ -922,15 +927,15 @@ textarea::placeholder {
   }
 
   .pop-desc {
-    position: absolute;
-    right: 1rem;
-    left: 50%;
-    bottom: 2.25rem;
-    padding-left: 1rem;
+    margin-left: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 30vh;
+  }
+
+  .popupwrapper {
+    display: flex;
+    flex-direction: row;
   }
 
   .pop-desc .text {
@@ -939,6 +944,8 @@ textarea::placeholder {
     text-align: left;
     font-family: "Inter", sans-serif;
     line-height: 29px;
+    padding-top: 0;
+    margin-top: 0;
   }
 
   .see-live {
@@ -962,9 +969,14 @@ textarea::placeholder {
   }
 
   .project-image img {
-    width: 50%;
-    height: auto;
-    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .project-image {
+    display: flex;
+    width: 500%;
   }
 }
 
