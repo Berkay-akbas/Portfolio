@@ -473,7 +473,6 @@ textarea::placeholder {
     top: 1%;
     right: 3%;
     box-sizing: border-box;
-    height: auto;
     background-color: #fff;
     padding: 1rem;
     transition: all 0.5s ease-in-out;
@@ -879,7 +878,6 @@ textarea::placeholder {
     left: 8%;
     top: 8%;
     right: 8%;
-    height: auto;
     background-color: #fff;
     padding: 2rem;
     transition: all 0.5s ease-in-out;
@@ -931,6 +929,7 @@ textarea::placeholder {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
   }
 
   .popupwrapper {
@@ -976,7 +975,7 @@ textarea::placeholder {
 
   .project-image {
     display: flex;
-    width: 500%;
+    width: 150%;
   }
 }
 
