@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins:wght@500&family=Roboto:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 
 html,
 body {
@@ -15,7 +16,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000;
+  z-index: 8;
   display: flex;
   padding: 3% 10% 3% 10%;
   align-items: center;
@@ -39,8 +40,6 @@ body {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
   font-family: "Roboto", sans-serif;
 }
 
@@ -189,6 +188,8 @@ body {
 
 .card {
   background-image: url(images/card.png);
+  background-repeat: round;
+  background-size: auto;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -225,7 +226,7 @@ body {
   font-family: Inter, sans-serif;
   line-height: 20px;
   color: #fff;
-  background-color: #696969;
+  background-color: rgba(105, 105, 105, 0.5);
 }
 
 .card a {
@@ -447,6 +448,10 @@ textarea::placeholder {
   padding-left: 25px;
 }
 
+.blur-filter {
+  filter: blur(3px) brightness(40%);
+}
+
 @media only screen and (max-width: 768px) {
   .navbar {
     position: absolute;
@@ -459,6 +464,96 @@ textarea::placeholder {
     height: 50rem;
     padding-right: 10%;
     transition: transform 30s ease-in;
+  }
+
+  .popup-container {
+    position: fixed;
+    z-index: 9;
+    left: 3%;
+    top: 1%;
+    right: 3%;
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .insidex {
+    position: absolute;
+    right: 2rem;
+    top: 1.3rem;
+    font-size: 28px;
+    color: #979493;
+    font-weight: 100;
+    -webkit-text-stroke: 3px white;
+  }
+
+  .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    color: #172b4d;
+    margin-top: -10px;
+  }
+
+  .pop-ul {
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    line-height: 16px;
+    color: #3c3a39;
+    padding: 0;
+    margin-top: -10px;
+  }
+
+  .pop-ul li {
+    border: 1px solid #979493;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .popup-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -10px;
+  }
+
+  .pop-desc .text {
+    font-size: 16px;
+    color: #344563;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .see-live {
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+  }
+
+  .see-source {
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+  }
+
+  .project-image {
+    height: 50%;
+    width: auto;
+  }
+
+  .project-image img {
+    width: 100%;
+    height: auto;
   }
 
   .header .navbar {
@@ -573,7 +668,7 @@ textarea::placeholder {
 
   .recent {
     position: relative;
-    z-index: 30;
+    z-index: 2;
     background: #fff;
     font-family: "Crete Round", serif;
     font-size: 40px;
@@ -653,7 +748,6 @@ textarea::placeholder {
   }
 
   .card a:hover {
-    color: lighten($red, 18%);
     letter-spacing: 3px;
     font-size: 20px;
     transition: all 0.3s;
@@ -776,6 +870,112 @@ textarea::placeholder {
   .navbar i {
     width: 22px;
     height: 18px;
+  }
+
+  .popup-container {
+    position: fixed;
+    z-index: 9;
+    left: 8%;
+    top: 8%;
+    right: 8%;
+    background-color: #fff;
+    padding: 2rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .insidex {
+    position: absolute;
+    right: 2rem;
+    top: 1.3rem;
+    font-size: 28px;
+    color: #979493;
+    font-weight: 100;
+    -webkit-text-stroke: 3px white;
+  }
+
+  .title {
+    font-family: "Roboto", sans-serif;
+    font-size: 32px;
+    color: #172b4d;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .pop-ul {
+    font-family: "Poppins", sans-serif;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    line-height: 16px;
+    color: #3c3a39;
+    padding: 0;
+    padding-bottom: 2rem;
+  }
+
+  .pop-ul li {
+    border: 1px solid #979493;
+    padding: 5px;
+    margin-right: 10px;
+  }
+
+  .popup-buttons {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .pop-desc {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .popupwrapper {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .pop-desc .text {
+    font-size: 16px;
+    color: #344563;
+    text-align: left;
+    font-family: "Inter", sans-serif;
+    line-height: 29px;
+    padding-top: 0;
+    margin-top: 0;
+  }
+
+  .see-live {
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    margin-right: 1rem;
+  }
+
+  .see-source {
+    background-color: #ff6b00;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    margin-right: 1rem;
+  }
+
+  .project-image img {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .project-image {
+    display: flex;
+    width: 150%;
   }
 }
 
