@@ -938,7 +938,7 @@ textarea::placeholder {
     color: #344563;
     text-align: left;
     font-family: "Inter", sans-serif;
-    line-height: 30px;
+    line-height: 29px;
   }
 
   .see-live {

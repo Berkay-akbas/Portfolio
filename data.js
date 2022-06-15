@@ -216,7 +216,3 @@ clickAction.forEach((e) => {
   e.addEventListener('click', pop);
 });
 
-const clickAction = document.querySelectorAll('.btn');
-clickAction.forEach((e) => {
-  e.addEventListener('click', pop);
-});
