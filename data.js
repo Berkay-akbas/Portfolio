@@ -129,9 +129,6 @@ const reference = document.querySelector('.gridContainer');
 const parent = document.querySelector('.works');
 parent.insertBefore(multi, reference);
 
-
-
-
 function pop(event) {
   const clickButton = event.target.getAttribute('id');
   let currentWork = '';
@@ -185,24 +182,21 @@ function pop(event) {
   </div>
   `;
   document.body.appendChild(popup);
- 
+
   const rest = document.querySelectorAll('.header, .headline, .works, .about, .form, .bottomfooter');
-  
+
   for (const a of rest) {
     a.classList.add('blur-filter');
-  };
+  }
 
   const x = document.querySelector('.fa-times');
-  
-  x.addEventListener('click', () => {
-    
-      popup.parentNode.removeChild(popup);
-      for (const a of rest) {
-        a.classList.remove('blur-filter');
-      };
-    
-  });
 
+  x.addEventListener('click', () => {
+    popup.parentNode.removeChild(popup);
+    for (const a of rest) {
+      a.classList.remove('blur-filter');
+    }
+  });
 
   document.querySelectorAll('.see-live').forEach((e) => {
     e.addEventListener('click', () => {
@@ -215,18 +209,9 @@ function pop(event) {
       window.open(currentWork.linktosource);
     });
   });
-
-
-  
-
 }
 
 const clickAction = document.querySelectorAll('.btn');
 clickAction.forEach((e) => {
   e.addEventListener('click', pop);
 });
-
-
-
-
-

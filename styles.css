@@ -743,7 +743,6 @@ textarea::placeholder {
   }
 
   .card a:hover {
-    color: lighten(red, 18%);
     letter-spacing: 3px;
     font-size: 20px;
     transition: all 0.3s;
@@ -867,6 +866,7 @@ textarea::placeholder {
     width: 22px;
     height: 18px;
   }
+
   .popup-container {
     position: fixed;
     z-index: 9;
@@ -939,7 +939,6 @@ textarea::placeholder {
     text-align: left;
     font-family: "Inter", sans-serif;
     line-height: 30px;
-    text-align: justify;
   }
 
   .see-live {
