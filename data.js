@@ -185,16 +185,16 @@ function pop(event) {
 
   const rest = document.querySelectorAll('.header, .headline, .works, .about, .form, .bottomfooter');
 
-  for (const a of rest) {
-    a.classList.add('blur-filter');
+  for (let i = 0; i < rest.length; i += 1) {
+    rest[i].classList.add('blur-filter');
   }
 
   const x = document.querySelector('.fa-times');
 
   x.addEventListener('click', () => {
     popup.parentNode.removeChild(popup);
-    for (const a of rest) {
-      a.classList.remove('blur-filter');
+    for (let i = 0; i < rest.length; i += 1) {
+      rest[i].classList.remove('blur-filter');
     }
   });
 
