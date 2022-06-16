@@ -44,12 +44,9 @@ email.addEventListener('input', () => {
 });
 
 form.addEventListener('submit', (event) => {
-  // if the form contains valid data, we let it submit
 
   if (!validateEmail(email.value)) {
-    // If it isn't, we display an appropriate error message
     showError();
-    // Then we prevent the form from being sent by canceling the event
     event.preventDefault();
   }
 });
