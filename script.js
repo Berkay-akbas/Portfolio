@@ -16,7 +16,7 @@ navbar.addEventListener('click', () => {
 
 const form = document.getElementsByTagName('form')[0];
 const email = document.getElementById('mail');
-const emailError = document.querySelector(".error");
+const emailError = document.querySelector('.error');
 
 function validateEmail() {
   const emailRegex = /^[a-z]+@[a-z-0-9-]+\.[a-z-0-9-.]+$/;
