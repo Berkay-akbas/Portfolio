@@ -463,6 +463,11 @@ textarea::placeholder {
     transition: transform 30s ease-in;
   }
 
+  .buttonwrapper {
+    display: flex;
+    justify-content: center;
+  }
+
   .popup-container {
     position: fixed;
     z-index: 9;
@@ -610,6 +615,11 @@ textarea::placeholder {
     background-size: calc(25% + 100px);
     padding-top: 192px;
     padding-bottom: 250px;
+  }
+
+  .buttonwrapper {
+    display: flex;
+    justify-content: flex-start;
   }
 
   .headline h1,
@@ -987,9 +997,4 @@ textarea::placeholder {
   text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
-}
-
-.buttonwrapper {
-  display: flex;
-  justify-content: flex-start;
 }
