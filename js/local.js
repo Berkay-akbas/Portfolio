@@ -6,11 +6,13 @@ const addUserData = (e) => {
   }
   localStorage.setItem('userData', JSON.stringify(userData));
 };
-
-document.getElementById('submitform').addEventListener('click', addUserData);
-
+const userDatas = JSON.parse(window.localStorage.getItem('userData'));
 window.onload = function() {
-  document.getElementById('name').value = JSON.parse(window.localStorage.getItem('userData')).userName;
-  document.getElementById('mail').value = JSON.parse(window.localStorage.getItem('userData')).userMail;
-  document.getElementById('msg').value = JSON.parse(window.localStorage.getItem('userData')).userText;asd
-}
+  if (localStorage.getItem('userData') === null) {
+    return;
+  } else {
+    for (let i = 0; i < Object.values(userDatas).length; i += 1){
+      document.querySelectorAll('.input-box')[i].value = Object.values(userDatas)[i];
+    }
+}};
+document.getElementById('submitform').addEventListener('click', addUserData);
