@@ -978,3 +978,9 @@ textarea::placeholder {
 .active {
   display: block !important;
 }
+
+.error {
+  color: #9b0c0c;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+}
