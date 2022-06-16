@@ -44,7 +44,6 @@ email.addEventListener('input', () => {
 });
 
 form.addEventListener('submit', (event) => {
-
   if (!validateEmail(email.value)) {
     showError();
     event.preventDefault();
