@@ -349,7 +349,7 @@ body {
   background-color: transparent;
 }
 
-.form {
+.forms {
   display: flex;
   text-align: center;
   padding-left: 24px;
@@ -357,23 +357,23 @@ body {
   flex-direction: column;
 }
 
-.form p {
+.forms p {
   font-family: inter, sans-serif;
   font-size: 32px;
   line-height: 44px;
   color: #172b4d;
 }
 
-.form ul {
+.forms ul {
   padding: 0;
   list-style-type: none;
 }
 
-.form li {
+.forms li {
   padding: 24px;
 }
 
-.form input,
+.forms input,
 textarea {
   border: 0;
   border-bottom: 1px solid #dbd8d7;
@@ -385,17 +385,13 @@ textarea {
   font-family: inter, sans-serif;
 }
 
-.form label {
-  display: none;
-}
-
-.form ::placeholder {
+.forms ::placeholder {
   font-size: 18px;
   font-family: inter, sans-serif;
   padding-left: 12px;
 }
 
-.form textarea {
+.forms textarea {
   background-color: #fbf8f7;
   font-size: 18px;
   outline: none;
@@ -405,7 +401,7 @@ textarea::placeholder {
   color: #3c3a39;
 }
 
-.form button {
+.forms button {
   background-color: #ff6b00;
   padding: 16px;
   font-family: Inter, sans-serif;
@@ -830,12 +826,12 @@ textarea::placeholder {
     margin-right: 10px;
   }
 
-  .form {
+  .forms {
     flex-direction: row;
     padding: 135px;
   }
 
-  .form p {
+  .forms p {
     max-width: 30%;
     text-align: left;
     font-size: 40px;
@@ -844,17 +840,17 @@ textarea::placeholder {
     font-weight: bold;
   }
 
-  .form form {
+  .forms form {
     flex-direction: row;
     width: 50%;
     text-align: left;
   }
 
-  .form button {
+  .forms button {
     margin-left: 24px;
   }
 
-  .form input,
+  .forms input,
   textarea {
     width: 150%;
   }

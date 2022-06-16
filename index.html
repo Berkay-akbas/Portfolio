@@ -114,15 +114,16 @@
         </div>
       </div>
     </section>
-    <section id="contactme" class="form">
+    <section id="contactme" class="forms">
       <p>
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </p>
-      <form action="https://formspree.io/f/mgeddrgj" method="post">
+      <form action="https://formspree.io/f/mgeddrgj" method="post" novalidate>
         <ul>
-          <li>
-            <label for="name">Name:</label>
+          <li class="input-box">
+            <label for="name">
+
             <input
               type="text"
               id="name"
@@ -132,18 +133,21 @@
               required
             />
           </li>
-          <li>
-            <label for="mail">E-mail:</label>
-            <input
-              type="email"
-              id="mail"
-              name="user_email"
-              placeholder="Email adress"
-              required
-            />
+        </label>
+          <li class="input-box">
+            <label for="mail">
+              <input
+                type="email"
+                id="mail"
+                name="user_email"
+                placeholder="Email adress"
+                required
+              />
+              <span class="error" aria-live="polite">a</span>
+            </label>
           </li>
-          <li>
-            <label for="msg">Message:</label>
+          <li class="input-box">
+            <label for="msg">
             <textarea
               id="msg"
               name="user_message"
@@ -152,9 +156,10 @@
               maxlength="500"
               required
             ></textarea>
+          </label>
           </li>
         </ul>
-        <button>Get in touch</button>
+        <button type="submit" value="submit">Get in touch</button>
       </form>
     </section>
     <footer class="bottomfooter">
