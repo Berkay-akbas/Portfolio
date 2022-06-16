@@ -119,7 +119,7 @@
         I'm always interested in hearing about new projects, so if you'd like to
         chat please get in touch.
       </p>
-      <form action="https://formspree.io/f/mgeddrgj" method="post" novalidate>
+      <form action="https://formspree.io/f/mgeddrgj" method="post" id="userform" novalidate>
         <ul>
           <li class="input-box">
             <label for="name">
@@ -143,7 +143,6 @@
                 placeholder="Email adress"
                 required
               />
-              <span class="error" aria-live="polite"></span>
             </label>
           </li>
           <li class="input-box">
@@ -159,7 +158,8 @@
           </label>
           </li>
         </ul>
-        <button type="submit" value="submit">Get in touch</button>
+        <button id="submitform" type="submit" value="submit">Get in touch</button>
+        <span class="error" aria-live="polite"></span>
       </form>
     </section>
     <footer class="bottomfooter">
