@@ -30,7 +30,8 @@ function showError() {
   if (email.validity.valueMissing) {
     emailError.textContent = 'You need to enter an e-mail address.';
   } else if (!validateEmail(email)) {
-    emailError.textContent = 'Entered value needs to be an e-mail address and in lower case';
+    emailError.textContent =
+      'Entered value needs to be an e-mail address and in lower case';
   }
 }
 
@@ -44,9 +45,8 @@ email.addEventListener('input', () => {
 });
 
 form.addEventListener('submit', (event) => {
-
-//   if (!validateEmail(email.value)) {
-//     showError();
-//     event.preventDefault();
-//   }
-// });
+  if (!validateEmail(email.value)) {
+    showError();
+    event.preventDefault();
+  }
+});
