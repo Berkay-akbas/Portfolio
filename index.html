@@ -121,7 +121,7 @@
       </p>
       <form action="https://formspree.io/f/mgeddrgj" method="post" id="userform" novalidate>
         <ul>
-          <li class="input-box">
+          <li>
             <label for="name">
 
             <input
@@ -131,10 +131,11 @@
               placeholder="Full name"
               maxlength="30"
               required
+              class="input-box"
             />
           </li>
         </label>
-          <li class="input-box">
+          <li>
             <label for="mail">
               <input
                 type="email"
@@ -142,10 +143,11 @@
                 name="user_email"
                 placeholder="Email adress"
                 required
+                class="input-box"
               />
             </label>
           </li>
-          <li class="input-box">
+          <li>
             <label for="msg">
             <textarea
               id="msg"
@@ -154,6 +156,7 @@
               rows="4"
               maxlength="500"
               required
+              class="input-box"
             ></textarea>
           </label>
           </li>
@@ -161,6 +164,7 @@
         <div class="buttonwrapper">
         <button id="submitform" type="submit" value="submit">Get in touch</button>
         <span class="error" aria-live="polite"></span>
+        <div id="mes"><pre></pre></div>
         </div>
       </form>
       
@@ -184,7 +188,8 @@
         </li>
       </ul>
     </footer>
-    <script src="script.js"></script>
-    <script src="data.js"></script>
+    <script src="/js/script.js"></script>
+    <script src="/js/data.js"></script>
+    <script src="/js/local.js"></script>
   </body>
 </html>
