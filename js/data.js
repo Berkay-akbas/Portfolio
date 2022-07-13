@@ -1,14 +1,14 @@
 const projectData = [
   {
     id: 'first',
-    name: 'Multi-Post Stories',
+    name: 'Simple To-Do List',
     description: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    featuredimg: './images/Img-Placeholder.png',
+    featuredimg: './images/sstodo.png',
     technologies: ['css', 'html', 'bootstrap', 'ruby'],
-    linktolive: 'https://berkay-akbas.github.io/Portfolio-Page',
-    linktosource: 'https://github.com/Berkay-akbas/Portfolio-Page',
+    linktolive: 'https://berkay-akbas.github.io/To-do-list/',
+    linktosource: 'https://github.com/Berkay-akbas/To-do-list',
     popupdescription: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    popupimg: './images/snap.png',
+    popupimg: './images/sstodo.png',
   },
   {
     id: 'second',
