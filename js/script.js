@@ -3,9 +3,9 @@ const navbar = document.querySelector('.navbar');
 const logo = document.querySelector('.logo');
 
 menu.addEventListener('click', () => {
-  logo.classList.toggle('off');
-  navbar.classList.toggle('active');
-  menu.classList.toggle('fa-times');
+  setTimeout(()=>  logo.classList.toggle('off'), 200);
+  setTimeout(()=>  navbar.classList.toggle('active'), 200);
+  setTimeout(()=>  menu.classList.toggle('fa-times'), 200);
 });
 
 navbar.addEventListener('click', () => {

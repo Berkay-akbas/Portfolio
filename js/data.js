@@ -194,8 +194,19 @@ function pop(event) {
 
   const x = document.querySelector('.fa-times');
 
+  function removeFadeOut( el, speed ) {
+    var seconds = speed/1000;
+    el.style.transition = "all "+seconds+"s ease";
+    el.style.transform = "scale(0)";
+
+    el.style.opacity = 0;
+    setTimeout(function() {
+        el.parentNode.removeChild(el);
+    }, speed);
+}
+
   x.addEventListener('click', () => {
-    popup.parentNode.removeChild(popup);
+    removeFadeOut(popup, 500);
     for (let i = 0; i < rest.length; i += 1) {
       rest[i].classList.remove('blur-filter');
     }

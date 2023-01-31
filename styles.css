@@ -22,12 +22,20 @@ body {
   align-items: center;
   justify-content: space-between;
   background: #3c3a39;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .header a {
-  color: #fff;
+  color: #d3d3d3;
   text-decoration: none;
   font-size: 18px;
+}
+
+
+.header a:hover {
+  color: #fff;
+  transition: all 0.2s ease-in-out !important;
 }
 
 .header i {
@@ -196,6 +204,7 @@ body {
   justify-content: end;
   padding: 16px;
   min-height: 22rem;
+  border-radius: 10px;
 }
 
 .card h4 {
@@ -245,6 +254,7 @@ body {
   margin-left: -16px;
   margin-right: -16px;
   margin-bottom: -16px;
+  border-radius: 10px;
 }
 
 .about {
@@ -462,7 +472,10 @@ textarea::placeholder {
     box-sizing: border-box;
     height: 50rem;
     padding-right: 10%;
-    transition: transform 30s ease-in;
+  }
+
+  .header {
+    border-radius: 0;
   }
 
   .buttonwrapper {
@@ -561,7 +574,7 @@ textarea::placeholder {
   }
 
   .header .navbar {
-    display: none;
+    visibility: hidden;
   }
 
   .off {
@@ -768,16 +781,11 @@ textarea::placeholder {
   }
 
   .card a:hover {
-    letter-spacing: 3px;
     font-size: 20px;
-    transition: all 0.3s;
-  }
+    transition: all 0.3s ease-in-out;
+    background-color: #091e42;
+    }
 
-  /* .hide {
-    transition: all 0.3s ease-out;
-    opacity: 1;
-  }
-   */
   .card:hover > .hide,
   .card:focus-within > .hide {
     opacity: 0;
@@ -1025,6 +1033,64 @@ textarea::placeholder {
   transition: 0.5s;
 }
 
+.navbar {
+  transform: translatex(200rem);
+  transition: all 0.3s;
+}
+
+.active {
+  visibility: visible !important;
+  transform: translateY(0);
+}
+
 .animate {
   transform: scale(1);
+}
+
+
+
+.btn {
+  border-radius: 10px;
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  transform: translateY(7px);
+}
+
+.btn:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #091e42;
+  cursor: pointer;
+}
+
+.resume:hover {
+  background-color: #9d70e4;
+}
+
+.see-live:hover, .see-source:hover {
+  transition: all 0.3s ease-in-out;
+  background-color: #091e42;
+  cursor: pointer;
+}
+
+.see-live:active, .see-source:active {
+  transform: translateY(7px);
+}
+
+.popup-container {
+  border-radius: 4px;
+}
+
+.see-live, .see-source {
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav-links a {
+  color: #D5D5D5;
 }
