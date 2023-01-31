@@ -184,6 +184,7 @@ function pop(event) {
   </div>
   `;
   document.body.appendChild(popup);
+  setTimeout(()=> popup.classList.add('animate'), 200);
 
   const rest = document.querySelectorAll('.header, .headline, .works, .about, .form, .bottomfooter');
 

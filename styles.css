@@ -750,7 +750,11 @@ textarea::placeholder {
   }
 
   .card a {
-    display: none;
+    visibility: hidden;
+    opacity: 0;
+    transition:all 0.3s linear,opacity 0.6s linear;
+    transform: translateY(100%);
+    border-radius: 4px;
   }
 
   .navbar a {
@@ -769,20 +773,23 @@ textarea::placeholder {
     transition: all 0.3s;
   }
 
-  .card:hover > .hide {
-    display: none;
+  /* .hide {
+    transition: all 0.3s ease-out;
+    opacity: 1;
   }
-
+   */
+  .card:hover > .hide,
   .card:focus-within > .hide {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.9s ease-out;
   }
-
+  
+  .card:hover > a,
   .card:focus-within > a {
-    display: block;
-  }
-
-  .card:hover > a {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
   .about {
@@ -1011,4 +1018,13 @@ textarea::placeholder {
   text-align: center;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.popup-container {
+  transform: scale(0);
+  transition: 0.5s;
+}
+
+.animate {
+  transform: scale(1);
 }
