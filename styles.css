@@ -195,6 +195,7 @@ body {
   flex-direction: column;
   justify-content: end;
   padding: 16px;
+  min-height: 22rem;
 }
 
 .card h4 {
@@ -607,6 +608,12 @@ textarea::placeholder {
     margin-top: 120px;
     padding-bottom: 40px;
   }
+
+  .card {
+    max-width: 30rem;
+    margin: auto;
+    margin-top: 2rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -730,10 +737,11 @@ textarea::placeholder {
   }
 
   .gridContainer {
-    grid-template-columns: repeat(3, minmax(26.77%, 1fr));
-    grid-gap: 24px;
-    padding-left: 10%;
-    padding-right: 10%;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 24px;
+  padding-left: 10%;
+  padding-right: 10%;
   }
 
   .about a {
@@ -987,6 +995,11 @@ textarea::placeholder {
   }
 }
 
+@media (max-width: 1000px) and (min-width: 768px) {
+  .gridContainer {
+    grid-template-columns: repeat(2, minmax(200px, 1fr));
+  }
+}
 .active {
   display: block !important;
 }
