@@ -22,8 +22,6 @@ body {
   align-items: center;
   justify-content: space-between;
   background: #3c3a39;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 
 .header a {
@@ -472,6 +470,11 @@ textarea::placeholder {
     box-sizing: border-box;
     height: 50rem;
     padding-right: 10%;
+  }
+
+  .navbar {
+    transform: translatex(200rem);
+    transition: all 0.3s;
   }
 
   .header {
@@ -1031,11 +1034,8 @@ textarea::placeholder {
 .popup-container {
   transform: scale(0);
   transition: 0.5s;
-}
-
-.navbar {
-  transform: translatex(200rem);
-  transition: all 0.3s;
+  max-height: calc(90vh - 90px);
+  overflow-y: auto;
 }
 
 .active {
@@ -1093,4 +1093,8 @@ textarea::placeholder {
 
 .nav-links a {
   color: #D5D5D5;
+}
+
+.fa-envelope {
+  margin-left: 0.5rem;
 }
