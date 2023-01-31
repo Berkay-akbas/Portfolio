@@ -30,7 +30,7 @@ function showError() {
   if (email.validity.valueMissing) {
     emailError.textContent = 'You need to enter an e-mail address.';
   } else if (!validateEmail(email)) {
-    emailError.textContent = 'Entered value needs to be an e-mail address and in lower case';
+    emailError.textContent = 'Entered value needs to be a valid e-mail address and in lower case';
   }
 }
 
