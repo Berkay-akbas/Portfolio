@@ -3,9 +3,9 @@ const navbar = document.querySelector('.navbar');
 const logo = document.querySelector('.logo');
 
 menu.addEventListener('click', () => {
-  logo.classList.toggle('off');
-  navbar.classList.toggle('active');
-  menu.classList.toggle('fa-times');
+  setTimeout(() => logo.classList.toggle('off'), 200);
+  setTimeout(() => navbar.classList.toggle('active'), 200);
+  setTimeout(() => menu.classList.toggle('fa-times'), 200);
 });
 
 navbar.addEventListener('click', () => {
@@ -30,7 +30,7 @@ function showError() {
   if (email.validity.valueMissing) {
     emailError.textContent = 'You need to enter an e-mail address.';
   } else if (!validateEmail(email)) {
-    emailError.textContent = 'Entered value needs to be an e-mail address and in lower case';
+    emailError.textContent = 'Entered value needs to be a valid e-mail address and in lower case';
   }
 }
 
