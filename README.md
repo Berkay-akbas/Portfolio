@@ -2,7 +2,7 @@
 
 # Portfolio Page
 
-> Creating a portfolio page.
+> My personal portfolio website that you can use to check my projects and connect with me! Built with HTML,CSS and Javascript.
 
 ## Built With
 
