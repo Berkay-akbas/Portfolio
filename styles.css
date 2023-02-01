@@ -24,16 +24,14 @@ body {
   background: #3c3a39;
 }
 
+.nav-links a {
+  color: #d5d5d5;
+}
+
 .header a {
   color: #d3d3d3;
   text-decoration: none;
   font-size: 18px;
-}
-
-
-.header a:hover {
-  color: #fff;
-  transition: all 0.2s ease-in-out !important;
 }
 
 .header i {
@@ -469,10 +467,7 @@ textarea::placeholder {
     box-sizing: border-box;
     height: 50rem;
     padding-right: 10%;
-  }
-
-  .navbar {
-    transform: translatex(200rem);
+    transform: translateX(200rem);
     transition: all 0.3s;
   }
 
@@ -629,11 +624,10 @@ textarea::placeholder {
     margin: auto;
     margin-top: 2rem;
   }
-  
+
   .hide {
-    background-color: black;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.65); 
+    background-color: rgba(0, 0, 0, 0.65);
     margin: -1rem;
     border-radius: 10px;
     margin-bottom: -2.8rem;
@@ -650,7 +644,6 @@ textarea::placeholder {
     visibility: hidden;
     transition: all 0.9s ease-out;
   }
-
 }
 
 @media only screen and (min-width: 768px) {
@@ -663,9 +656,8 @@ textarea::placeholder {
   }
 
   .hide {
-    background-color: black;
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.65); 
+    background-color: rgba(0, 0, 0, 0.65);
     margin: -1rem;
     height: 2300%;
     border-radius: 10px;
@@ -789,10 +781,10 @@ textarea::placeholder {
 
   .gridContainer {
     grid-template-columns: repeat(3, minmax(200px, 1fr));
-  grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 24px;
-  padding-left: 10%;
-  padding-right: 10%;
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 24px;
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .about a {
@@ -803,7 +795,7 @@ textarea::placeholder {
   .card a {
     visibility: hidden;
     opacity: 0;
-    transition:all 0.3s linear,opacity 0.6s linear;
+    transition: all 0.3s linear, opacity 0.6s linear;
     transform: translateY(100%);
     border-radius: 4px;
   }
@@ -812,7 +804,7 @@ textarea::placeholder {
     color: #fff;
   }
 
-  .card:after {
+  .card::after {
     background: linear-gradient(rgb(255, 254, 254), rgba(0, 0, 0, 0.5)) !important;
   }
 
@@ -820,14 +812,13 @@ textarea::placeholder {
     /* background-image: url(images/hover.png); */
     background-repeat: no-repeat;
     background-size: cover;
-    
   }
 
   .card a:hover {
     font-size: 20px;
     transition: all 0.3s ease-in-out;
     background-color: #091e42;
-    }
+  }
 
   .card:hover > .hide,
   .card:focus-within > .hide {
@@ -835,7 +826,7 @@ textarea::placeholder {
     visibility: hidden;
     transition: all 0.9s ease-out;
   }
-  
+
   .card:hover > a,
   .card:focus-within > a {
     opacity: 1;
@@ -1058,8 +1049,16 @@ textarea::placeholder {
     grid-template-columns: repeat(2, minmax(200px, 1fr));
   }
 }
+
 .active {
   display: block !important;
+  visibility: visible !important;
+  transform: translateY(0);
+}
+
+.see-live,
+.see-source {
+  border-radius: 4px;
 }
 
 .error {
@@ -1076,18 +1075,12 @@ textarea::placeholder {
   transition: 0.5s;
   max-height: calc(90vh - 90px);
   overflow-y: auto;
-}
-
-.active {
-  visibility: visible !important;
-  transform: translateY(0);
+  border-radius: 4px;
 }
 
 .animate {
   transform: scale(1);
 }
-
-
 
 .btn {
   border-radius: 10px;
@@ -1108,22 +1101,16 @@ textarea::placeholder {
   background-color: #9d70e4;
 }
 
-.see-live:hover, .see-source:hover {
+.see-live:hover,
+.see-source:hover {
   transition: all 0.3s ease-in-out;
   background-color: #091e42;
   cursor: pointer;
 }
 
-.see-live:active, .see-source:active {
+.see-live:active,
+.see-source:active {
   transform: translateY(7px);
-}
-
-.popup-container {
-  border-radius: 4px;
-}
-
-.see-live, .see-source {
-  border-radius: 4px;
 }
 
 .nav-links a:hover {
@@ -1131,10 +1118,11 @@ textarea::placeholder {
   transition: all 0.2s ease-in-out;
 }
 
-.nav-links a {
-  color: #D5D5D5;
-}
-
 .fa-envelope {
   margin-left: 0.5rem;
+}
+
+.header a:hover {
+  color: #fff;
+  transition: all 0.2s ease-in-out !important;
 }

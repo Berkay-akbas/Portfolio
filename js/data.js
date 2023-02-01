@@ -187,7 +187,7 @@ function pop(event) {
   </div>
   `;
   document.body.appendChild(popup);
-  setTimeout(()=> popup.classList.add('animate'), 200);
+  setTimeout(() => popup.classList.add('animate'), 200);
 
   const rest = document.querySelectorAll('.header, .headline, .works, .about, .form, .bottomfooter');
 
@@ -197,16 +197,16 @@ function pop(event) {
 
   const x = document.querySelector('.fa-times');
 
-  function removeFadeOut( el, speed ) {
-    var seconds = speed/1000;
-    el.style.transition = "all "+seconds+"s ease";
-    el.style.transform = "scale(0)";
+  function removeFadeOut(el, speed) {
+    const seconds = speed / 1000;
+    el.style.transition = `all ${seconds}s ease`;
+    el.style.transform = 'scale(0)';
 
     el.style.opacity = 0;
-    setTimeout(function() {
-        el.parentNode.removeChild(el);
+    setTimeout(() => {
+      el.parentNode.removeChild(el);
     }, speed);
-}
+  }
 
   x.addEventListener('click', () => {
     removeFadeOut(popup, 500);
