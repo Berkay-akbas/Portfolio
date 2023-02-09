@@ -2,10 +2,10 @@ const projectData = [
   {
     id: 'third',
     name: 'Jet-Log',
-    description: "Jet-log is a real world practical app for renting planes from anywhere in the world.",
-    featuredimg: './images/jetlog.png',
+    description: 'Jet-log is a real world practical app for renting planes from anywhere in the world.',
+    featuredimg: './images/plane3.png',
     technologies: ['react', 'redux', 'ruby', 'rails', 'postgresql', 'css'],
-    linktolive: 'https://the-awesome-berkay-akbas-site.netlify.app/MakeReservation',
+    linktolive: 'https://super-cool-site-by-berkay-akbas.netlify.app/',
     linktosource: 'https://github.com/Berkay-akbas/jet-log-frontend',
     popupdescription: 'This app designed to make plane rentals easy and convenient! With this practical and user-friendly app, you can explore all the available planes at your fingertips. Simply click on a plane to see its detailed information and choose the one that suits you best. If you are ready to make a reservation, the app has got you covered with secure authentication. You can view all your past and current reservations in one place. And for the administrators, the app provides additional authorization to manage the plane database. Whether you are a frequent traveler or just need a plane for a special occasion, this app is the perfect solution for all your plane rental needs. Built with React for frontend and Rails for backend.',
     popupimg: './images/jetlogpop.png',
@@ -13,7 +13,7 @@ const projectData = [
   {
     id: 'forth',
     name: 'BudgetSnapp',
-    description: "BudgetSnapp is mobile web application for budget management.",
+    description: 'BudgetSnapp is mobile web application for budget management.',
     featuredimg: './images/budgetsnapop.png',
     technologies: ['html', 'bootstrap', 'ruby'],
     linktolive: 'https://berkay-akbas.github.io/Portfolio-Page',
@@ -24,7 +24,7 @@ const projectData = [
   {
     id: 'fifth',
     name: 'Crypto Metrics',
-    description: "A single page mobile web application that list cryptocurrencies by the market cap. User can click on the coin to get more detailed stats. Built with React and Redux",
+    description: 'A single page mobile web application that list cryptocurrencies by the market cap. User can click on the coin to get more detailed stats. Built with React and Redux',
     featuredimg: './images/metrics.png',
     technologies: ['redux', 'react', 'css'],
     linktolive: 'https://63101da901ad3a07f00ed7eb--heartfelt-travesseiro-a85e40.netlify.app/',
@@ -35,20 +35,20 @@ const projectData = [
   {
     id: 'sixth',
     name: 'Recipe App',
-    description: "The Recipe app is a app to keeps track of all your recipes, ingredients, and inventory.",
+    description: 'The Recipe app is a app to keeps track of all your recipes, ingredients, and inventory.',
     featuredimg: './images/recipe1.png',
     technologies: ['ruby', 'rails', 'postgresql', 'css'],
     linktolive: 'https://github.com/Berkay-akbas/recipe-app',
     linktosource: 'https://github.com/Berkay-akbas/recipe-app',
-    
+
     popupdescription: 'This is a simple app designed to help you organize your recipes, ingredients, and inventory. You can save ingredients, track what you have in your inventory, create public recipes to share with others, and check the inventory and recipes to see whats missing and generate a shopping list. The app is built using Ruby on Rails and utilizes PostgreSQL as its database.',
     popupimg: './images/recipe2.png',
   },
   {
     id: 'seventh',
     name: 'My-Blog',
-    description: "The My-Blog is a blog app to keeps track of all your and your friends posts.",
-    featuredimg: './images/blog1.png',
+    description: 'The My-Blog is a blog app to keeps track of all your and your friends posts.',
+    featuredimg: './images/newblog.png',
     technologies: ['ruby', 'rails', 'postgresql', 'css'],
     linktolive: 'https://blog-scy8.onrender.com/users/',
     linktosource: 'https://github.com/Berkay-akbas/My-Blog',
@@ -58,7 +58,7 @@ const projectData = [
   {
     id: 'first',
     name: 'Simple To-Do List',
-    description: "To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.",
+    description: 'To-do list is a tool that helps to organize your day. It simply lists the things that you need to do and allows you to mark them as complete.',
     featuredimg: './images/sstodo.png',
     technologies: ['css', 'html', 'javascript'],
     linktolive: 'https://berkay-akbas.github.io/To-do-list/',
@@ -69,7 +69,7 @@ const projectData = [
   {
     id: 'second',
     name: 'Bookstore',
-    description: "Bookstore is a webapp for storing books. It is a Single Page App (SPA) that allows users to store, comment and save progress about the books they are reading.",
+    description: 'Bookstore is a webapp for storing books. It is a Single Page App (SPA) that allows users to store, comment and save progress about the books they are reading.',
     featuredimg: './images/bookstore.png',
     technologies: ['css', 'react'],
     linktolive: 'https://berkay-bookstore.netlify.app/',
@@ -233,4 +233,3 @@ const clickAction = document.querySelectorAll('.btn');
 clickAction.forEach((e) => {
   e.addEventListener('click', pop);
 });
-

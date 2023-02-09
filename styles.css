@@ -129,6 +129,9 @@ body {
 .multi-stories img {
   width: 60%;
   margin: auto;
+  border: 1.5px solid #6c6c6c;
+  border-radius: 4px;
+  max-width: 70rem;
 }
 
 .multi-stories {
@@ -200,26 +203,29 @@ body {
   padding: 16px;
   min-height: 22rem;
   border-radius: 10px;
+  box-shadow: 0 15px 20px rgb(0 0 0 / 0.8);
 }
 
 .card h4 {
   font-family: "Crete Round", serif;
-  font-size: 3rem;
+  font-size: calc(1rem + 1.3vw);
   line-height: 44px;
-  color: #fff;
+  color: orange;
+  margin-top: 2rem;
   margin-bottom: -20px;
   padding-left: 1.5rem;
 }
 
 .card p {
   font-family: Inter, sans-serif;
-  font-size: 16px;
+  font-size: calc(0.8rem + 0.5vw);
   color: #fff;
   line-height: 24px;
   padding-left: 1.5rem;
   padding-top: 1.5rem;
   padding-right: 1.5rem;
-   -webkit-text-stroke: 1.3px white;
+  max-width: 30rem;
+  -webkit-text-stroke: 1.3px white;
 }
 
 .card ul {
@@ -228,7 +234,8 @@ body {
   list-style-type: none;
   gap: 10px;
   padding-left: 1.5rem;
-  margin-top: -10px;
+  margin-top: auto;
+  margin-bottom: 3rem;
 }
 
 .card li {
@@ -476,6 +483,10 @@ textarea::placeholder {
     transition: all 0.3s;
   }
 
+  .card ul {
+    margin-top: 3rem;
+  }
+
   .header {
     border-radius: 0;
   }
@@ -545,7 +556,6 @@ textarea::placeholder {
     font-family: "Inter", sans-serif;
     padding-top: 0;
     margin-top: 0;
-    
   }
 
   .see-live {
@@ -633,7 +643,7 @@ textarea::placeholder {
 
   .hide {
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.75);
     margin: -1rem;
     border-radius: 10px;
     margin-bottom: -2.8rem;
@@ -663,7 +673,7 @@ textarea::placeholder {
 
   .hide {
     z-index: 2;
-    background-color: rgba(0, 0, 0, 0.65);
+    background-color: rgba(0, 0, 0, 0.75);
     margin: -1rem;
     height: 2300%;
     border-radius: 10px;
@@ -1133,10 +1143,4 @@ textarea::placeholder {
 .header a:hover {
   color: #fff;
   transition: all 0.2s ease-in-out !important;
-}
-
-.multi-stories img {
-  border: 1.5px solid #6c6c6c;
-  border-radius: 4px;
-  max-width: 70rem;
 }
