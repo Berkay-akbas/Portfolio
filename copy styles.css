@@ -204,7 +204,7 @@ body {
 
 .card h4 {
   font-family: "Crete Round", serif;
-  font-size: 3rem;
+  font-size: 2vw;
   line-height: 44px;
   color: #fff;
   margin-bottom: -20px;
@@ -213,13 +213,13 @@ body {
 
 .card p {
   font-family: Inter, sans-serif;
-  font-size: 16px;
+  font-size: 0.9vw;
   color: #fff;
   line-height: 24px;
   padding-left: 1.5rem;
   padding-top: 1.5rem;
   padding-right: 1.5rem;
-   -webkit-text-stroke: 1.3px white;
+  -webkit-text-stroke: 1.3px white;
 }
 
 .card ul {
@@ -227,13 +227,13 @@ body {
   flex-wrap: wrap;
   list-style-type: none;
   gap: 10px;
-  padding-left: 1.5rem;
   margin-top: -10px;
+  padding-left: 1.5rem;
 }
 
 .card li {
   padding: 8px;
-  font-size: 15px;
+  font-size: 0.8vw;
   font-family: Inter, sans-serif;
   line-height: 20px;
   color: #fff;
@@ -462,6 +462,44 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 768px) {
+  /* .card h4 {
+    font-family: "Crete Round", serif;
+    font-size: 1rem;
+    line-height: 44px;
+    color: #fff;
+    margin-bottom: -20px;
+    padding-left: 1.5rem;
+  }
+  
+  .card p {
+    font-family: Inter, sans-serif;
+    font-size: 0.9vw;
+    color: #fff;
+    line-height: 24px;
+    padding-left: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 1.5rem;
+    -webkit-text-stroke: 1.3px white;
+  }
+  
+  .card ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 10px;
+    margin-top: -10px;
+    padding-left: 1.5rem;
+  }
+  
+  .card li {
+    padding: 8px;
+    font-size: 0.8vw;
+    font-family: Inter, sans-serif;
+    line-height: 20px;
+    color: #fff;
+    background-color: rgba(105, 105, 105, 0.5);
+  } */
+
   .navbar {
     position: absolute;
     top: 100%;
