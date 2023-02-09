@@ -469,6 +469,10 @@ textarea::placeholder {
 }
 
 @media only screen and (max-width: 768px) {
+  .card h4 {
+    font-size: calc(1.7rem + 2.3vw);
+  }
+
   .navbar {
     position: absolute;
     top: 100%;
