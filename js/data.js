@@ -24,7 +24,7 @@ const projectData = [
   {
     id: 'fifth',
     name: 'Crypto Metrics',
-    description: 'A single page mobile web application that list cryptocurrencies by the market cap. User can click on the coin to get more detailed stats. Built with React and Redux',
+    description: 'A single page mobile web application that lists cryptocurrencies by the market cap. Users can click on the coin to get more detailed stats. Built with React and Redux',
     featuredimg: './images/metrics.png',
     technologies: ['redux', 'react', 'css'],
     linktolive: 'https://63101da901ad3a07f00ed7eb--heartfelt-travesseiro-a85e40.netlify.app/',
