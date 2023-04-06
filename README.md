@@ -12,7 +12,7 @@
 
 ## Live Demo
 
-https://berkay-akbas.github.io/Portfolio-Page/
+https://berkay-akbas.github.io/Portfolio/
 
 ## Authors
 
